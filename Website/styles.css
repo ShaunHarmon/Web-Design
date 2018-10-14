@@ -26,8 +26,46 @@ body{
     width: 15vw;
 }
 
+nav{
+    position: absolute;
+    display: flex;
+    margin: 20px;
+    top: 60px;
+    left: 60%;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: dimgray;
+    padding: 20px;
+    font-size: 20px;  
+}
+
+
+a:hover {
+    color: darkred;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    justify-content: space-between;
+}
+
+.grid-container > div > p{
+    color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px 0px 75px;
+    text-align: center
+}
+
+#footer-img{ 
+    height:125px;
+     
+}
+
 footer{
-    
     position: absolute;
     background-color: black;
     height: 150px;
