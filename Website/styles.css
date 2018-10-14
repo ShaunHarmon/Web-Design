@@ -1,3 +1,17 @@
+body{
+    display: block;        
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    box-sizing: border-box;
+    position: relative;
+    width: auto;
+}
+
 #header_background{
     position: relative;
     width: 100%;
@@ -13,9 +27,10 @@
 }
 
 footer{
-    position: relative;
+    
+    position: absolute;
     background-color: black;
     height: 150px;
     width: 100%;
-    bottom: 0;
+    bottom: 0px;
 }
