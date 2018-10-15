@@ -5,11 +5,13 @@ body{
     margin: 0;
 }
 
-.container{
+.grid-container-main{
     display: grid;
-    box-sizing: border-box;
+    grid-template-columns: auto auto auto;
     position: relative;
     width: auto;
+    height: 65ch;
+    background-image: linear-gradient(white, gray);
 }
 
 #header_background{
@@ -34,17 +36,7 @@ nav{
     left: 60%;
 }
 
-a:link, a:visited{
-    text-decoration: none;
-    color: dimgray;
-    padding: 20px;
-    font-size: 20px;  
-}
 
-
-a:hover {
-    color: darkred;
-}
 
 .grid-container{
     display: grid;
@@ -60,6 +52,29 @@ a:hover {
     text-align: center
 }
 
+
+.grid-container-main > a > div > img {
+    border-radius: 8px;
+    padding:3px;
+    border:5px solid rgb(49, 49, 49);
+    background-color: rgb(211, 211, 211);
+    margin: 0px 0px 20px 100px;
+    justify-content: space-between;
+    height: 30vh;
+    width: 40vh;
+}
+
+.grid-container-main > a > div > p {
+    color: rgb(49, 49, 49);
+    text-align: center;
+    font-size: 1em;
+}
+
+.grid-container-main > a > div:hover {  
+    transform: scale(1.05) ;
+    
+}
+
 #footer-img{ 
     height:125px;
      
@@ -71,4 +86,16 @@ footer{
     height: 150px;
     width: 100%;
     bottom: 0px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: dimgray;
+    padding: 20px;
+    font-size: 20px;  
+}
+
+
+a:hover {
+    color: darkred;
 }
