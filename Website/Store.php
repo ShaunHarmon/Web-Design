@@ -34,14 +34,14 @@
             $dbname = "products";
             // Create connection 
             $conn = mysqli($servername, $username, $password, $dbname);
-            echo 'test';
+            
             // Check connection 
             if ($conn->connect_error) 
                 die("Connection failed: " . $conn->connect_error);
                 //echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-                echo 'success';
+                
                 $result = $conn->query("SELECT * FROM products");
                 if (($result != 0) && ($result->num_rows > 0)) 
                 { 
