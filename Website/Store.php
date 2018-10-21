@@ -1,9 +1,9 @@
-
+<?php
 <!DOCTYPE html>
 <html>
 <head>
   <meta name="City Fitness" >
-  <?php <link rel="stylesheet" href="styles.css"></php>
+  <?php echo "<link rel="stylesheet" href="styles.css">" ?>
   <script src="script.js"></script>
   <title>City Fitness</title>
 </head>
@@ -54,3 +54,5 @@
     </footer>
 </body>
 </html>
+
+?>
