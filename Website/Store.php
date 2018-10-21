@@ -26,7 +26,7 @@
     <div class="container">
         <?php 
             //Allow Headers 
-            header('Access-Control-Allow-Origin: *');
+            //header('Access-Control-Allow-Origin: *');
             $servername = "localhost:3306"; 
             //$servername = "sh7652server.centralus.cloudapp.azure.com:3306";
             $username = "manager1"; 
@@ -37,13 +37,13 @@
             
             // Check connection 
             if ($conn->connect_error) 
-                die("Connection failed: " . $conn->connect_error);
-                //echo "Error: Unexpected connection error. Please retry the operation."; 
+                
+                echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
 
                 $result = $conn->query("SELECT * FROM products");
-                echo $result;
+                
                 if (($result != 0) && ($result->num_rows > 0)) 
                 { 
                     $row = $result->fetch_assoc();
