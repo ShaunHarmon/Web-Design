@@ -28,8 +28,8 @@
             //Allow Headers 
             //header('Access-Control-Allow-Origin: *');
             //$servername = "localhost:3306"; 
-            $servername = "sh7652server.centralus.cloudapp.azure.com:3389";
-            $username = "manager1"; 
+            $servername = "sh7652server.centralus.cloudapp.azure.com:3306";
+            $username = "dbuser"; 
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
