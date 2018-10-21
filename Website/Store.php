@@ -31,7 +31,7 @@
             $servername = "localhost:3306"; 
             //$servername = 'sh7652server.centralus.cloudapp.azure.com:3306';
            //$servername = '40.113.207.35:3306';
-            $username = "root"; 
+            $username = "manager1"; 
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
