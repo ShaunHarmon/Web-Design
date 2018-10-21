@@ -28,12 +28,14 @@
             //Allow Headers 
             //header('Access-Control-Allow-Origin: *');
             //$servername = "localhost:3306"; 
-            $servername = 'sh7652server.centralus.cloudapp.azure.com:3306';
+           // $servername = 'sh7652server.centralus.cloudapp.azure.com:3306';
+           $servername = '40.113.207.35';
             $username = "manager1"; 
             $password = "July201998!!"; 
-            $dbname = "products";
+           //$dbname = "products";
             // Create connection 
-            $conn = new mysqli($servername, $username, $password, $dbname);
+            $conn =  mysqli_connect($servername, $username, $password);
+            
             
             // Check connection 
             if ($conn->connect_error) 
@@ -41,7 +43,7 @@
                 echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-
+                echo 'successful';
                 $result = $conn->query("SELECT * FROM products");
                 
                 if (($result != 0) && ($result->num_rows > 0)) 
