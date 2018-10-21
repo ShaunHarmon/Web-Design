@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta name="City Fitness" >
-  <link rel="stylesheet" href="styles.css">
+  <?php <link rel="stylesheet" href="styles.css"></php>
   <script src="script.js"></script>
   <title>City Fitness</title>
 </head>
@@ -18,7 +18,7 @@
             <a href="Upper.html">UPPER BODY</a> 
             <a href="abs.html">ABS</a> 
             <a href="legs.html">LEGS</a>
-            <a href="workouts.html">WORKOUTS</a>
+            <a href="Store.html">WORKOUTS</a>
         </nav>
     </header>
 
