@@ -28,7 +28,7 @@
             //Allow Headers 
             header('Access-Control-Allow-Origin: *');
             //$servername = "localhost:3306"; 
-            $servername = "localhost:3306";
+            $servername = "sh7652server.centralus.cloudapp.azure.com:3306";
             $username = "manager1"; 
             $password = "July201998!!"; 
             $dbname = "products";
@@ -47,9 +47,9 @@
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
                     
-                    echo $A; 
-                    echo $B; 
-                    echo $C; 
+                    echo $A; <br>
+                    echo $B; <br>
+                    echo $C; <br>
                  
                 } 
                 $conn->close(); 
