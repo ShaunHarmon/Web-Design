@@ -34,7 +34,7 @@
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn =  new mysqli_connect($servername, $username, $password, $dbname);
+            $conn =  new mysqli($servername, $username, $password, $dbname);
             
             
             // Check connection 
