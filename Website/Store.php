@@ -33,7 +33,7 @@
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn = mysql_connect($servername, $username, $password, $dbname);
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
             echo 'test';
             // Check connection 
             if ($conn->connect_error) 
