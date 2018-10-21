@@ -41,7 +41,6 @@
                 //echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-                echo $conn;
 
                 $result = $conn->query("SELECT * FROM products");
                 echo $result;
