@@ -1,5 +1,4 @@
-<?php
-<!DOCTYPE html>
+
 <html>
 <head>
   <meta name="City Fitness" >
@@ -54,4 +53,3 @@
     </footer>
 </body>
 </html>
-?>
