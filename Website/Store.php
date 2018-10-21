@@ -33,10 +33,11 @@
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn = new mysqli_connect($servername, $username, $password, $dbname);
+            $conn = new mysqli($servername, $username, $password, $dbname);
             // Check connection 
             if ($conn->connect_error) 
-                echo "Error: Unexpected connection error. Please retry the operation."; 
+                die("Connection failed: " . $conn->connect_error);
+                //echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
                 echo 'success';
