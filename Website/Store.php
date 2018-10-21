@@ -1,8 +1,10 @@
 
+
+<!DOCTYPE html>
 <html>
 <head>
   <meta name="City Fitness" >
-  <?php echo "<link rel="stylesheet" href="styles.css">" ?>
+  <?php echo "<link rel="stylesheet" href="styles.css">"; ?>
   <script src="script.js"></script>
   <title>City Fitness</title>
 </head>
