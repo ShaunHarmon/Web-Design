@@ -47,9 +47,9 @@
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
                     
-                    echo $A; <br>
-                    echo $B; <br>
-                    echo $C; <br>
+                    echo $A; 
+                    echo $B; 
+                    echo $C; 
                  
                 } 
                 $conn->close(); 
