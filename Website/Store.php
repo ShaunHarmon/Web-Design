@@ -39,7 +39,7 @@
                 echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-                $result = $conn->query("SELECT * FROM test");
+                $result = $conn->query("SELECT * FROM products");
                 if (($result != 0) && ($result->num_rows > 0)) 
                 { 
                     $row = $result->fetch_assoc();
