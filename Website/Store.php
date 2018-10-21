@@ -28,12 +28,13 @@
             //Allow Headers 
             header('Access-Control-Allow-Origin: *');
             //$servername = "localhost:3306"; 
-            $servername = "sh7652server.centralus.cloudapp.azure.com";
+            $servername = "sh7652server.centralus.cloudapp.azure.com:3306";
             $username = "manager1"; 
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn = mysql_connect($servername, $username, $password, $dbname, 3306);
+            $conn = mysql_connect($servername, $username, $password, $dbname);
+            echo 'test';
             // Check connection 
             if ($conn->connect_error) 
                 die("Connection failed: " . $conn->connect_error);
