@@ -24,7 +24,37 @@
     </header>
 
     <div class="container">
-        <h1>WORKOUTS</h1>
+        <?php 
+            //Allow Headers 
+            header('Access-Control-Allow-Origin: *');
+            //$servername = "localhost:3306"; 
+            $servername = "localhost:3306";
+            $username = "manager1"; 
+            $password = "July201998!!"; 
+            $dbname = "products";
+            // Create connection 
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection 
+            if ($conn->connect_error) 
+                echo "Error: Unexpected connection error. Please retry the operation."; 
+            else 
+            { 
+                $result = $conn->query("SELECT * FROM test");
+                if (($result != 0) && ($result->num_rows > 0)) 
+                { 
+                    $row = $result->fetch_assoc();
+                    $A = $row['product_NAME']; 
+                    $B = $row['product_COST']; 
+                    $C = $row['product_TYPE']; 
+                    
+                    echo $A; 
+                    echo $B; 
+                    echo $C; 
+                 
+                } 
+                $conn->close(); 
+            } 
+        ?>
     </div>
     
     <footer>
