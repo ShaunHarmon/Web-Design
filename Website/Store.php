@@ -32,9 +32,9 @@
            $servername = '40.113.207.35';
             $username = "manager1"; 
             $password = "July201998!!"; 
-           //$dbname = "products";
+            $dbname = "products";
             // Create connection 
-            $conn =  mysqli_connect($servername, $username, $password);
+            $conn =  mysqli_connect($servername, $username, $password, $dbname);
             
             
             // Check connection 
@@ -43,7 +43,7 @@
                 echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-                echo 'successful';
+                
                 $result = $conn->query("SELECT * FROM products");
                 
                 if (($result != 0) && ($result->num_rows > 0)) 
