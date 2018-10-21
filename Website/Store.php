@@ -33,7 +33,7 @@
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn = mysqli($servername, $username, $password, $dbname);
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
             
             // Check connection 
             if ($conn->connect_error) 
@@ -49,7 +49,7 @@
                     $A = $row['product_NAME']; 
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
-                    
+                    echo 'test';
                     echo $A; 
                     echo $B; 
                     echo $C; 
