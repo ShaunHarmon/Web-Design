@@ -33,12 +33,13 @@
             $password = "July201998!!"; 
             $dbname = "products";
             // Create connection 
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
+            $conn = new mysqli_connect($servername, $username, $password, $dbname);
             // Check connection 
             if ($conn->connect_error) 
                 echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
+                echo 'success';
                 $result = $conn->query("SELECT * FROM products");
                 if (($result != 0) && ($result->num_rows > 0)) 
                 { 
