@@ -41,15 +41,17 @@
                 //echo "Error: Unexpected connection error. Please retry the operation."; 
             else 
             { 
-                
+                echo $conn;
+
                 $result = $conn->query("SELECT * FROM products");
+                echo $result;
                 if (($result != 0) && ($result->num_rows > 0)) 
                 { 
                     $row = $result->fetch_assoc();
                     $A = $row['product_NAME']; 
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
-                    echo 'test';
+                    
                     echo $A; 
                     echo $B; 
                     echo $C; 
