@@ -6,7 +6,12 @@ body{
 }
 
 .container {
+    
     box-sizing: border-box;
+    
+}
+
+.columns{
     float: left;
     width: 33.3%;
     padding: 8px;
