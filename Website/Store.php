@@ -58,7 +58,7 @@
                     echo $A; 
                     echo $B; 
                     echo $C; 
-                    echo "<img src ='".$path." height="200" width="200"'/>";
+                    echo "<img src ='".$path."'/>";
                  
                 } 
                 $conn->close(); 
