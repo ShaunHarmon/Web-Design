@@ -58,6 +58,7 @@
                     echo $A; 
                     echo $B; 
                     echo $C; 
+                    echo $path;
                     echo "<img src ='".$path."'/>";
                  
                 } 
