@@ -53,12 +53,12 @@
                     $A = $row['product_NAME']; 
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
-                    $path = $row['product_PATH'];
+                    $path = $row['path'];
                     
                     echo $A; 
                     echo $B; 
                     echo $C; 
-                    echo "<img src ='".$path.'>";
+                    echo "<img src ='". $path. " '>";
                  
                 } 
                 $conn->close(); 
