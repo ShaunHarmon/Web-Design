@@ -59,7 +59,7 @@
                     echo $B; 
                     echo $C; 
                     echo $path;
-                    echo "<img class='"thumbnail"' src ='". $path ."'/>";
+                    echo "<img class='thumbnail' src ='". $path ."'/>";
                  
                 } 
                 $conn->close(); 
