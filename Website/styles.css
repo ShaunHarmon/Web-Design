@@ -52,6 +52,10 @@ nav{
     text-align: center
 }
 
+.thumbnail{
+    height: 50px;
+    width: 50px;
+}
 
 .grid-container-main > a > div > img {
     border-radius: 8px;
