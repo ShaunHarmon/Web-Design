@@ -54,12 +54,22 @@
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
                     $path = $row['path'];
+                    echo "<div class='columns'>
+                        <ul class='products'>
+                            <li>
+                                <img class='thumbnail' src ='". $path ."'/>
+                            </li>
+                            <li>"$A"</li>
+                            <li>"$B"</li>                       
+                        </ul>                    
+                    </div>"
+
                     
-                    echo $A; 
-                    echo $B; 
-                    echo $C; 
-                    echo $path;
-                    echo "<img class='thumbnail' src ='". $path ."'/>";
+                    //echo $A; 
+                   // echo $B; 
+                    //echo $C; 
+                    //echo $path;
+                    //echo "";
                  
                 } 
                 $conn->close(); 

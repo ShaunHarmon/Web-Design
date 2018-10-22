@@ -5,6 +5,28 @@ body{
     margin: 0;
 }
 
+.container {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.products {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+
+.products li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
 .grid-container-main{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -52,10 +74,6 @@ nav{
     text-align: center
 }
 
-.thumbnail{
-    height: 50px;
-    width: 50px;
-}
 
 .grid-container-main > a > div > img {
     border-radius: 8px;
