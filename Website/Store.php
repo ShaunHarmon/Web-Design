@@ -59,10 +59,10 @@
                             <li>
                                 <img class='thumbnail' src ='". $path ."'/>
                             </li>
-                            <li>".$A."</li>
-                            <li>".$B."</li>                       
+                            <li>".$B."</li>
+                            <li>".$A."</li>                       
                         </ul>                    
-                    </div>"
+                    </div>";
 
                     
                     //echo $A; 
