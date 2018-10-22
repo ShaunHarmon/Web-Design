@@ -9,10 +9,13 @@ body{
     box-sizing: border-box;
     float: left;
     width: 33.3%;
-    height: 50%;
     padding: 8px;
 }
 
+.thumbnails{
+    height: 2 vw;
+    width: 2 vw;
+}
 .products {
     list-style-type: none;
     border: 1px solid #eee;
