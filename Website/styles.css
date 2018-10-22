@@ -35,7 +35,7 @@ body{
     border-bottom: 1px solid #eee;
     padding: 20px;
     text-align: center;
-    font-size: 10vw;
+    font-size: 2vw;
 }
 .grid-container-main{
     display: grid;
