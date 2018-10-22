@@ -12,9 +12,9 @@ body{
     padding: 8px;
 }
 
-.products .thumbnail{
-    height: 100px;
-    width: 100px;
+ .thumbnail{
+    height: 10vw;
+    
 }
 
 .products {
