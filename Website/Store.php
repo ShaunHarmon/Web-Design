@@ -45,11 +45,11 @@
             else 
             { 
                 
-                $result = $conn->query("SELECT * FROM products");
+                $product1 = $conn->query("SELECT * FROM products WHERE product_ID = 1");
                 
-                if (($result != 0) && ($result->num_rows > 0)) 
+                if (($product1 != 0) && ($product1->num_rows > 0)) 
                 { 
-                    $row = $result->fetch_assoc();
+                    $row = $product1->fetch_assoc();
                     $A = $row['product_NAME']; 
                     $B = $row['product_COST']; 
                     $C = $row['product_TYPE']; 
@@ -62,16 +62,28 @@
                             <li>".$A."</li>
                             <li>$".$B.".00</li>                       
                         </ul>                    
-                    </div>";
-
-                    
-                    //echo $A; 
-                   // echo $B; 
-                    //echo $C; 
-                    //echo $path;
-                    //echo "";
-                 
+                    </div>";                 
                 } 
+                $product2 = $conn->query("SELECT * FROM products WHERE product_ID = 2");
+                
+                if (($product2 != 0) && ($product2->num_rows > 0)) 
+                { 
+                    $row = $product2->fetch_assoc();
+                    $A = $row['product_NAME']; 
+                    $B = $row['product_COST']; 
+                    $C = $row['product_TYPE']; 
+                    $path = $row['path'];
+                    echo "<div class='columns'>
+                        <ul class='products'>
+                            <li>
+                                <img class='thumbnail' src ='". $path ."'/>
+                            </li>
+                            <li>".$A."</li>
+                            <li>$".$B.".00</li>                       
+                        </ul>                    
+                    </div>";                 
+                } 
+
                 $conn->close(); 
             } 
         ?>
