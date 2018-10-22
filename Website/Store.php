@@ -59,8 +59,8 @@
                             <li>
                                 <img class='thumbnail' src ='". $path ."'/>
                             </li>
-                            <li>".$B."</li>
-                            <li>".$A."</li>                       
+                            <li>".$A."</li>
+                            <li>$".$B.".00</li>                       
                         </ul>                    
                     </div>";
 
