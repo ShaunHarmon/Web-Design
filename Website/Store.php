@@ -83,6 +83,25 @@
                         </ul>                    
                     </div>";                 
                 } 
+                $product3 = $conn->query("SELECT * FROM products WHERE product_ID = 3");
+                
+                if (($product3 != 0) && ($product3->num_rows > 0)) 
+                { 
+                    $row = $product3->fetch_assoc();
+                    $A = $row['product_NAME']; 
+                    $B = $row['product_COST']; 
+                    $C = $row['product_TYPE']; 
+                    $path = $row['path'];
+                    echo "<div class='columns'>
+                        <ul class='products'>
+                            <li>
+                                <img class='thumbnail' src ='". $path ."'/>
+                            </li>
+                            <li>".$A."</li>
+                            <li>$".$B.".00</li>                       
+                        </ul>                    
+                    </div>";                 
+                } 
 
                 $conn->close(); 
             } 
