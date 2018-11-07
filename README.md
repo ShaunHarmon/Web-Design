@@ -1,7 +1,8 @@
 # <em><bold>City Fitness</bold></em>
 
 
-One Paragraph of project description goes here
+Use City Fitness mobile app to create custom workouts tailored to your needs. City Fitness has provided workouts based by group 
+to target specific muscles. 
 
 ## Getting Started
 
