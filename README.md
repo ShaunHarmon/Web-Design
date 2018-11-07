@@ -1,4 +1,4 @@
-# <em>bold>City Fitness</bold></em>
+# <em><bold>City Fitness</bold></em>
 
 
 One Paragraph of project description goes here
