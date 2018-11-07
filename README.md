@@ -4,6 +4,12 @@
 Use City Fitness mobile app to create custom workouts tailored to your needs. City Fitness has provided workouts based by group 
 to target specific muscles. 
 
+## Installing
+
+* Clone project 
+* Download FTP Client [Filezilla](https://filezilla.com) 
+* Upload project to server
+
 
 ## Contributing
 
@@ -20,5 +26,5 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License 
 
