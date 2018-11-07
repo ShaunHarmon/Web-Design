@@ -26,5 +26,5 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the Open Source License. [License](LICENSE.MD)
+This project is licensed under the Open Source License. [LICENSE.md](LICENSE.MD)
 
